@@ -18,5 +18,16 @@ form.addEventListener("submit", (e) => {
     }, 3000);
 
     input.value = "";
+  } else {
+    kgToPound = Number(input.value) * 2.20462; // equal to 1 KG
+
+    convertedWeight.classList.add("successful");
+    convertedWeight.innerHTML = `${kgToPound.toFixed(3)}`;
+
+    setTimeout(() => {
+      convertedWeight.innerHTML = "";
+      convertedWeight.classList.remove("successful");
+      input.value = "";
+    }, 10000);
   }
 });
