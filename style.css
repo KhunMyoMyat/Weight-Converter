@@ -54,8 +54,9 @@ input:focus {
 }
 
 #convertedWeight {
-  font-size: 20px;
+  font-size: 16px;
   color: #e74c3c;
   font-weight: bold;
   display: inline-block;
+  margin-top: 8px;
 }
